@@ -23,7 +23,7 @@ To use, copy the prompt from the example and paste it into the Composer.
 
 > The fewer lines of code the better
 
-### Personality
+### Act smart
 
 > Proceed like a senior developer
 
