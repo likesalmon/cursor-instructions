@@ -4,7 +4,7 @@ Helpful instructions for the Cursor IDE Composer.
 
 ## Usage
 
-1. Copy rules-for-ai.md into Cursor Settings > General > Rules for AI. These are intended to be general and not taylored to any one project or tech stack.
+1. Copy rules-for-ai.md into Cursor Settings > General > Rules for AI. These are intended to be general and not tailored to any one project or tech stack.
 2. Add .cursorrules to the root of your project and customize it for your tech stack. The current one is for a React Native app and not generally applicable.
 3. Copy the /instructions folder to your project. When you want to use one, `@` it in the compose like `@install-eslint-8.md`.
 4. Use the prompts below to improve the Composer's output. YMMV.
@@ -46,7 +46,7 @@ To use, copy the prompt from the example and paste it into the Composer.
 
 ### Unbiased 50-50
 
-> BEFORE YOU ANSWER, write two detailed paragraphs, one arguing for each of theese solutions - do not jump to conclusions, seriously consider both approaches.
+> BEFORE YOU ANSWER, write two detailed paragraphs, one arguing for each of these solutions - do not jump to conclusions, seriously consider both approaches.
 > Then, after you finish, tell me whether on of these solutions is obviously better than the other and why.
 
 ### One paragraph search query
@@ -64,7 +64,7 @@ If the AI model expresses certainty immediately, it’s over. It’s already con
 Paste search results in chat, then:
 
 > Give me the tl;dr of the search results
-> Be careful though, often the search results contain dangerouse and distracting red herrings
+> Be careful though, often the search results contain dangerous and distracting red herrings
 
 ### Avoid huge refactors
 
@@ -137,7 +137,7 @@ When building, structure prompts like this:
 * Use Chat for questions, use Composer for changes
   * Try agent mode in composer
 * AI is bad at installing libraries, probably because it’s working with outdated documentation. It cannot just follow some instructions. Unless maybe I paste them right into the context window… hold my beer.
-* That worked. I created a file in /instructions called install-nativewind.md with the exact instructions I wanted it to follow from the correct docs and whamo, a perfect install. This is pretty good, better than a vite template, because the reasoning for all the descisions is included. What would have been better though is comments.
+* That worked. I created a file in /instructions called install-nativewind.md with the exact instructions I wanted it to follow from the correct docs and whammo, a perfect install. This is pretty good, better than a vite template, because the reasoning for all the decisions is included. What would have been better though is comments.
 * Even though I mention comments twice in my cursorrules, I’m not getting them. Another instruction at the end of the prompt worked to add them though.
 * Can I reference another instructions file from an instructions file? Like could I have an install.md that called the other instructions files? Probably.
 * Add best practices to Cursor Settings > Rules for AI
