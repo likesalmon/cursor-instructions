@@ -1,0 +1,147 @@
+# Project: React Native Sandbox
+
+## Project Overview
+
+A react native app that is used to test and develop react native components.
+
+## Personality
+
+- You are an expert in TypeScript, React Native, Expo, and Mobile UI development.
+
+## React and TypeScript Guidelines
+
+- Write concise, technical TypeScript code with accurate examples
+- Use functional and declarative programming patterns; avoid classes
+- Prefer iteration and modularization over code duplication
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)
+- Use Prettier for consistent code formatting.
+- Avoid object destructuring
+- Use TypeScript for all code
+- Prefer interfaces over types
+- Utilize Zod for schema validation and type inference
+- Avoid enums; use const objects with 'as const' assertion
+- Use functional components with TypeScript interfaces
+- Use explicit return types for all functions
+- Use Zustand for global state when needed
+- Implement proper cleanup in useEffect hooks
+- Use "function" keyword for pure functions
+- Avoid unnecessary curly braces in conditionals
+- Use declarative JSX
+
+## UI and Styling
+
+- Use react-native-reusables components in /components/ui for components
+- If a component is not available in /components/ui, use `npx @react-native-reusables/cli@latest add <component-name> --npm` to add new react-native-reusables components
+- When adding new react-native-reusables component, document the installation command
+- Use Nativewind CSS for styling
+- Use Expo's built-in components for common UI patterns and layouts.
+- Use FlashList for infinite scrolling
+- When icons are needed, use the icons in the /lib/icons folder.
+- Import icons individually from the /lib/icons folder.
+- If an icon is not found in /lib/icons, generated it using the `generate <component-name>` script, where `<component name>` is the name of the icon from the lucide-react-native library.
+- Always wrap text in a Text component
+- Use the dayjs instance in /lib/dayjs.ts for date formatting
+- When importing components, check if the component exists in /components/ui before importing from elsewhere
+
+## API Requests
+
+- Use the /services/api.ts file to define API requests
+- When defining get requests, use the `queryOptions` function from Tanstack Query to define the query options
+- Define request and response types for each endpoint in the /services/types.ts file
+- Use Tanstack Query to make API requests
+- Do not destructure the response data in the query function
+
+## Tech Stack
+
+- NPM
+- React Native
+- React Native Reusables
+- TypeScript
+- Nativewind CSS
+- Shadcn UI
+- Tanstack Query
+- Zustand
+- Expo Router
+- Expo Splash Screen
+- Expo Media Library
+- Expo Secure Store
+- Expo File System
+- Dayjs
+- Lucide React Native
+
+## Building Process
+
+- Run `npx expo prebuild --platform ios` to prebuild the project for iOS.
+- Run `npx expo prebuild --platform android` to prebuild the project for Android.
+- Run `npx expo run:ios` to run the project on iOS.
+- Run `npx expo run:android` to run the project on Android.
+
+## Environment variables
+
+- Use the `.env` file to store our environment variables.
+- When we create a new environment variable, add a variable with the same name in the .env.example file, but without a value.
+- Use the `process.env` object to access the environment variables.
+
+## Current File Structure
+
+Structure repository files as follows:
+
+```text
+app/ # expo app
+├── (protected)/ # protected routes that require authentication
+├── (public)/ # public routes that do not require authentication
+assets/ # assets
+├── fonts/ # font files like .ttf, .otf, etc.
+├── images/ # image files like .png, .jpg, etc.
+components/ # shared components
+├── ui/ # react-native-reusables components
+hooks/ # shared hooks
+lib/ # shared libraries
+├── icons/ # icon components
+├── constants.ts # shared constants
+├── type-guards.ts # shared type guards
+├── utils.ts # shared utils
+├── dayjs.ts # dayjs instance
+plop-templates/ # plop templates for generating new components
+services/ # shared services
+├── claimtally-api-v1.ts # Auth logic, axios instance, and api endpoints
+├── query-client.ts # Tanstack Query client
+├── types.ts # shared types specific to the API
+```
+
+## Error Handling
+
+- Implement proper error boundaries
+- Log errors appropriately for debugging
+- Provide user-friendly error messages
+- Handle network failures gracefully
+
+## Git Usage
+
+Commit Message Prefixes:
+
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "build:" for configuration changes and new package installations
+- "chore:" for maintenance tasks
+
+Rules:
+
+- Use lowercase for commit messages
+- Keep the summary line concise
+- Include description for non-obvious changes
+- Reference issue numbers when applicable
+
+## Important
+
+- If you are unsure about the correct answer, ask the user to provide more information.
+
+## Other Context
+
+
+## Comments
